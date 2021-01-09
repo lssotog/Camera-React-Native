@@ -23,7 +23,7 @@ cd ios && pod install && cd ..
  android/app/src/main/AndroidManifest.xml
  ```
  Agregar las siguientes lineas para configurar los permisos en el archivo AndroidManifest.xml:
- ```
+ ```xml
  <!-- Required -->
 <uses-permission android:name="android.permission.CAMERA" />
 
@@ -43,7 +43,7 @@ info.plist
 ```
 Agregar las siguientes lineas para configurar los permisos en el archivo info.plist:
 
-```
+```xml
 <!-- Required with iOS 10 and higher -->
 <key>NSCameraUsageDescription</key>
 <string>Your message to user when the camera is accessed for the first time</string>
