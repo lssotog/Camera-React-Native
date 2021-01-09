@@ -10,7 +10,7 @@ Seguir los siguientes pasos:
 ```
 npm install react-native-camera --save
 ```
-2. En la consola ejecutar:
+2. En la consola ejecutar (para IOS):
 ```
 cd ios && pod install && cd ..
 ```
