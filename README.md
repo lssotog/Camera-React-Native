@@ -24,7 +24,7 @@ cd ios && pod install && cd ..
  ```
  Agregar las siguientes lineas para configurar los permisos en el archivo AndroidManifest.xml:
  ```xml
- <!-- Required -->
+<!-- Required -->
 <uses-permission android:name="android.permission.CAMERA" />
 
 <!-- Include this only if you are planning to use the camera roll -->
