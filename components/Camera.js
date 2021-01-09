@@ -1,6 +1,5 @@
 import React, {useRef, useState} from 'react';
 import {Image, Modal, StyleSheet, Text, View, Button} from 'react-native';
-
 import {RNCamera} from 'react-native-camera';
 
 export default function Camera() {
