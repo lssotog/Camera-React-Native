@@ -34,6 +34,9 @@ cd ios && pod install && cd ..
 <!-- Include this only if you are planning to use the microphone for video recording -->
 <uses-permission android:name="android.permission.RECORD_AUDIO"/>
  ```
+ esto se puede ver a continuacion: 
+![apermisions](ReadmeAssets/android-manifest.jpg)
+
 
  ### IOS
  Para IOS los permisos se configuran en la ruta:
