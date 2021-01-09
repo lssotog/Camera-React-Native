@@ -37,6 +37,24 @@ cd ios && pod install && cd ..
  esto se puede ver a continuacion: 
 ![apermisions](ReadmeAssets/android-manifest.jpg)
 
+a continuacion se debe editar el archivo de la ruta:
+```
+android/app/build.gradle
+```
+se deben agregar las siguientes lineas:
+
+```
+android {
+  ...
+  defaultConfig {
+    ...
+    missingDimensionStrategy 'react-native-camera', 'general' // <--- insert this line
+  }
+}
+```
+
+El resultado es como se muestra en la siguiente imagen:
+![agpermisions](ReadmeAssets/android-gradle.jpg)
 
  ### IOS
  Para IOS los permisos se configuran en la ruta:
