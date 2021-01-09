@@ -22,6 +22,19 @@ cd ios && pod install && cd ..
  ```
  android/app/src/main/AndroidManifest.xml
  ```
+ Agregar las siguientes lineas para configurar los permisos en el archivo AndroidManifest.xml:
+ ```
+ <!-- Required -->
+<uses-permission android:name="android.permission.CAMERA" />
+
+<!-- Include this only if you are planning to use the camera roll -->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+<!-- Include this only if you are planning to use the microphone for video recording -->
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+ ```
+
  ### IOS
  Para IOS los permisos se configuran en la ruta:
 
